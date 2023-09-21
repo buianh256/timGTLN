@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim GTLN</title>
+</head>
+<body>
+<script>
+    let arrNumbers = [1,2,4,5,67,7,8,9,10,11,12]
+    let max = arrNumbers[0]
+    let min = arrNumbers[0]
+    let index = 0;
+    let n = arrNumbers.length
+    for (let i = 1; i < n; i++){
+        if(arrNumbers[i]>max){
+            max = arrNumbers[i];
+            index = i;
+        }
+        if (min>arrNumbers[i]){
+            min = arrNumbers[i];
+        }
+    }
+    document.write("Gia tri lon nhat " + max + ' ' );
+    document.write("Gia tri nho nhat " + min );
+</script>
+</body>
+</html>
